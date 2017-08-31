@@ -1,0 +1,10 @@
+{
+    "host"                 : "localhost",
+    "port"                 : "3306",
+    "user"                 : "root",
+    "password"             : "자기비밀번호쓰기",
+    "database"             : "trippleday",
+    "multipleStatements"   : "multipleQueryEnable",
+    "connectionLimit"      : "10",
+    "waitForConnections"   : "waitForConnections"
+}
