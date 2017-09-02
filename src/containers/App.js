@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { Header } from '../components';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {Login, Home, Register,SearchResult,CreateProgram,
-  CreateMeetPlace,CreateDetail,CreatePDetail,Program, TravelList} from '../containers';
+  CreateMeetPlace,CreateDetail,CreatePDetail,Program, TravelList, MyPage, MyTrip, Review} from '../containers';
 import {logoutRequest} from '../actions/login';
 import { connect } from 'react-redux';
 
@@ -68,6 +68,9 @@ class App extends Component {
                          <Route path="/CreatePDetail" component={CreatePDetail}/>
                          <Route path="/Program" component={Program}/>
                          <Route path="/TravelList" component={TravelList}/>
+                         <Route path="/MyPage" component={MyPage}/>
+                         <Route path="/MyTrip" component={MyTrip}/>
+                         <Route path="/Review" component={Review}/>
                      </Switch>
                  </div>
              </div>
