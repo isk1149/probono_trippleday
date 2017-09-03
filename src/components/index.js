@@ -10,4 +10,7 @@ import InputGuide from './InputGuide';
 import SideNav from './SideNav';
 import Profile from './Profile';
 import RegisterForm from './RegisterForm';
-export { Header, LoginForm, SearchForm,GuideCardItem,GoogleMap,RoutesPlan ,MeetingPlace,InputProgram,InputGuide, SideNav, Profile, RegisterForm};
+import MyGuide from './MyGuide';
+import MyReservedTravel from './MyReservedTravel';
+
+export { Header, LoginForm, SearchForm,GuideCardItem,GoogleMap,RoutesPlan ,MeetingPlace,InputProgram,InputGuide, SideNav, Profile, RegisterForm, MyGuide, MyReservedTravel};

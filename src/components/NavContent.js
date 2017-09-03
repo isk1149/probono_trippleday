@@ -13,7 +13,7 @@ class NavContent extends Component {
 
             <div className="nav-content">
               <div className="tabs tabs-transparent">
-
+                <NavLink to = "/WishList" className="tab right"><a>위시리스트</a></NavLink>
                 <NavLink to = "/TravelList" className="tab right"><a>여행하기</a></NavLink>
                 <NavLink to = "/CreateProgram" className="tab right"><a>프로그램 만들기</a></NavLink>
 

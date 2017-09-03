@@ -37,7 +37,7 @@ class GuideCardItem extends Component {
             {CardItem}
             {CardItem}
             {CardItem}
-            {CardItem}
+          
             </div>
 
 
