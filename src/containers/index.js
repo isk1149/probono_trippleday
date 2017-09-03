@@ -12,4 +12,5 @@ import TravelList from './TravelList';
 import MyPage from './MyPage';
 import MyTrip from './MyTrip';
 import Review from './Review';
-export { App, Home, Login, Register,SearchResult, CreateProgram,CreateMeetPlace,CreateDetail,CreatePDetail,Program, TravelList, MyPage, MyTrip, Review};
+import WishList from './WishList';
+export { App, Home, Login, Register,SearchResult, CreateProgram,CreateMeetPlace,CreateDetail,CreatePDetail,Program, TravelList, MyPage, MyTrip, Review, WishList};
