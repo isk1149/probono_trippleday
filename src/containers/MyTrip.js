@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import {SideNav} from '../components/';
 import { Tabs, Tab, TabContainer, TabContent, TabPane } from 'react-bootstrap';
-import {GuideCardItem} from '../components/';
 import {MyGuide, MyReservedTravel} from '../components/';
 
 const propTypes = {
@@ -25,7 +24,7 @@ class MyTrip extends Component {
 
 
         return(
-          <div className='row'>
+          <div className='row '>
             <SideNav />
             <div className="col s9">
               <h3> 나의 여행 페이지</h3>

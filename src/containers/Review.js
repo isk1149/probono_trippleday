@@ -1,15 +1,22 @@
 import React, { Component, PropTypes } from 'react';
 import {SideNav} from '../components/';
 import { Tabs, Tab, TabContainer, TabContent, TabPane } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
+
 
 const propTypes = {
 };
 const defaultProps = {
+
 };
+
+
 class Review extends Component {
     constructor(props) {
         super(props);
+
     }
+
     render() {
         return(
           <div className='row'>
@@ -23,7 +30,8 @@ class Review extends Component {
                       <h3> 후기</h3>
                     </Tab>
                     <Tab eventKey={2} title="나에 대한 후기">
-                      <h3> 후기</h3>
+
+                      
                     </Tab>
                     <Tab eventKey={3} title="미작성 여행">
                       <h3> 후기</h3>

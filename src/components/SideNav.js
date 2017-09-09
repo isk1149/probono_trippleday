@@ -12,7 +12,7 @@ class SideNav extends Component {
 
       const SideBar = (
 
-          /*<div className="col s3">*/
+
 
             <div>
                 <NavLink to = "/MyPage" ><h3 className='center'>프로필</h3></NavLink>
@@ -24,8 +24,8 @@ class SideNav extends Component {
       )
 
         return(
-          /*<div className="row side_nav">*/
-          <div className="col s3">
+
+          <div className="col s3 ">
             {SideBar}
 
             </div>

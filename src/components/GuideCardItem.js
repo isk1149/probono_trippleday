@@ -31,13 +31,15 @@ class GuideCardItem extends Component {
          </div>
       )
 
+
+
         return(
 
           <div className="row cardContainer">
             {CardItem}
             {CardItem}
             {CardItem}
-          
+
             </div>
 
 
