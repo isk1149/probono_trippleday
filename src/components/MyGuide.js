@@ -17,25 +17,31 @@ class MyGuide extends Component {
       const myGuide = (
 
           <div className="row cardContainer ">
-            <div className="col s3">
-              <div className="card red lighten-3">
+            <div className="col s4">
+
+              <div className="card ">
+
                 <div className="card-image">
-                 <img src="http://13.124.115.238:8080/image/no_image.png"/>
-                <span className="card-title black-text">내가 만든 여행</span>
+                 <img src="http://blog.arborday.org/wp-content/uploads/2013/02/NEC1-300x200.jpg"/>
+
                 </div>
-                <div className="card-content">
-                  <p>안녕하세요 함께 놀러갑시다.</p>
-                </div>
+
                 <div className="card-action">
-                  <a href="#" className="white-text">상세보기</a>
-              
+                  <p>₩96,069 Bike and taste the best of Paris at your own pace.</p>
+                  <br></br>
+                  <a href="#" className="blue-text">상세보기</a> <p className="right"> 평점 <span> 3.5</span> 점</p>
                 </div>
+
+
+                </div>
+
               </div>
-             </div>
 
-             <div className="col s6">
 
-               <table className="striped">
+
+             <div className="col s8 ">
+
+               <table className="striped centered">
 
                  <thead>
                            <tr>
@@ -48,20 +54,20 @@ class MyGuide extends Component {
                     <tr>
                       <td><p> <span>2017</span>년  <span>x</span>월 <span>x</span>일 </p>
                                     <p> <span>오전 xx:xx</span> ~ <span>오후 xx:xx</span> </p></td>
-                      <td> <Button bsStyle="success"><span>x</span>명</Button></td>
-                      <td><Button bsStyle="warning"><span>x</span>명</Button></td>
+                      <td> <a href="#" className="green-text"><span>3</span>명</a></td>
+                      <td><a href="#" className="orange-text"><span>3</span>명</a></td>
                     </tr>
                     <tr>
                       <td><p> <span>2017</span>년  <span>x</span>월 <span>x</span>일 </p>
                                     <p> <span>오전 xx:xx</span> ~ <span>오후 xx:xx</span> </p></td>
-                      <td> <Button bsStyle="success"><span>x</span>명</Button></td>
-                      <td><Button bsStyle="warning"><span>x</span>명</Button></td>
+                                      <td> <a href="#" className="green-text"><span>3</span>명</a></td>
+                                      <td><a href="#" className="orange-text"><span>3</span>명</a></td>
                     </tr>
                     <tr>
                       <td><p> <span>2017</span>년  <span>x</span>월 <span>x</span>일 </p>
                                     <p> <span>오전 xx:xx</span> ~ <span>오후 xx:xx</span> </p></td>
-                      <td> <Button bsStyle="success"><span>x</span>명</Button></td>
-                      <td><Button bsStyle="warning"><span>x</span>명</Button></td>
+                                      <td> <a href="#" className="green-text"><span>3</span>명</a></td>
+                                      <td><a href="#" className="orange-text"><span>3</span>명</a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -78,7 +84,7 @@ class MyGuide extends Component {
       )
 
         return(
-          <div >
+          <div>
             {myGuide}
             {myGuide}
             {myGuide}

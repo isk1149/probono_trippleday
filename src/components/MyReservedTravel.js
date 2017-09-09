@@ -6,7 +6,7 @@ const propTypes = {
 };
 const defaultProps = {
 };
-
+/*<span className="card-title black-text">내가 예약한 여행</span>*/
 
 class MyReservedTravel extends Component {
     constructor(props) {
@@ -16,23 +16,29 @@ class MyReservedTravel extends Component {
 
       const myReservedTravel = (
 
-          <div>
-          <div className="col s3">
-            <div className="card red lighten-3">
+        <div>
+          <div className="col s4 ">
+
+            <div className="card ">
+
               <div className="card-image">
-               <img src="http://13.124.115.238:8080/image/no_image.png"/>
-              <span className="card-title black-text">내가 예약한 여행</span>
+               <img src="http://blog.arborday.org/wp-content/uploads/2013/02/NEC1-300x200.jpg"/>
+
               </div>
-              <div className="card-content">
-                <p>안녕하세요 함께 놀러갑시다.</p>
-              </div>
+
               <div className="card-action">
-                <a href="#" className="white-text">상세보기</a>
-                 <Button bsStyle="success">참여확정</Button>
+                <p>₩96,069 Bike and taste the best of Paris at your own pace.</p>
+                <br></br>
+                <a href="#" className="blue-text">상세보기</a>
+                <p className="right green-text">참여확정</p>
+
               </div>
+
+
+              </div>
+
             </div>
-           </div>
-           </div>
+         </div>
 
 
       )
@@ -40,21 +46,25 @@ class MyReservedTravel extends Component {
       const myReservedTravel_yet = (
 
           <div>
-          <div className="col s3">
-            <div className="card red lighten-3">
-              <div className="card-image">
-               <img src="http://13.124.115.238:8080/image/no_image.png"/>
-              <span className="card-title black-text">내가 예약한 여행</span>
+            <div className="col s4">
+
+              <div className="card ">
+
+                <div className="card-image">
+                 <img src="http://blog.arborday.org/wp-content/uploads/2013/02/NEC1-300x200.jpg"/>
+
+                </div>
+
+                <div className="card-action">
+                  <p>₩96,069 Bike and taste the best of Paris at your own pace.</p>
+                  <br></br>
+                  <a href="#" className="blue-text">상세보기</a> <p className="right orange-text">확정대기</p>
+                </div>
+
+
+                </div>
+
               </div>
-              <div className="card-content">
-                <p>안녕하세요 함께 놀러갑시다.</p>
-              </div>
-              <div className="card-action">
-                <a href="#" className="white-text">상세보기</a>
-                 <Button bsStyle="warning">확정대기</Button>
-              </div>
-            </div>
-           </div>
            </div>
 
 
@@ -67,7 +77,8 @@ class MyReservedTravel extends Component {
             {myReservedTravel}
             {myReservedTravel_yet}
             {myReservedTravel}
-
+            {myReservedTravel_yet}
+            {myReservedTravel}
             </div>
         );
     }

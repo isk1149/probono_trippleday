@@ -14,17 +14,18 @@ class GuideCardItem extends Component {
       const CardItem = (
         <div>
         <div className="col s3">
-          <div className="card red lighten-3">
+          <div className="card">
             <div className="card-image">
-             <img src="http://13.124.115.238:8080/image/no_image.png"/>
-            <span className="card-title black-text">서울에서 우리 같이 놀까요?</span>
+             <img src="http://blog.arborday.org/wp-content/uploads/2013/02/NEC1-300x200.jpg"/>
+
             </div>
-            <div className="card-content">
-              <p>안녕하세요 함께 놀러갑시다.</p>
-            </div>
+
             <div className="card-action">
-              <a href="#" className="white-text">상세보기</a>
-              <a href="#" className="white-text">찜하기</a>
+              <p>₩96,069 Bike and taste the best of Paris at your own pace.</p>
+              <br></br>
+              <a href="#" className="blue-text">상세보기</a>
+              <a href="#" className="blue-text">찜하기</a>
+              <p className="right black-text"> 평점 <span> 3.5</span> 점</p>
             </div>
           </div>
          </div>
@@ -33,12 +34,22 @@ class GuideCardItem extends Component {
 
 
 
+
+
+
         return(
 
-          <div className="row cardContainer">
-            {CardItem}
-            {CardItem}
-            {CardItem}
+          <div className="col s12">
+
+              {CardItem}
+              {CardItem}
+              {CardItem}
+              {CardItem}
+              {CardItem}
+              {CardItem}
+              {CardItem}
+              {CardItem}
+
 
             </div>
 

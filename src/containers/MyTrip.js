@@ -24,9 +24,9 @@ class MyTrip extends Component {
 
 
         return(
-          <div className='row '>
+          <div className='row'>
             <SideNav />
-            <div className="col s9">
+            <div className="col s8 ">
               <h3> 나의 여행 페이지</h3>
 
 

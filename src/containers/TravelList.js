@@ -10,11 +10,13 @@ class TravelList extends Component {
     }
     render() {
         return(
-          <div >
-            <div>여행리스트</div>
+          <div className="container auth">
+          <div className="row">
+            <h3>여행리스트</h3>
 
             <GuideCardItem />
           </div>
+        </div>
         );
     }
 }

@@ -1,5 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Image } from 'react-bootstrap';
+
 const propTypes = {
 };
 const defaultProps = {
@@ -10,11 +12,18 @@ class Profile extends Component {
     }
     render() {
 
+
+
+
       const profile = (
 
           /*<div className='red col s9' id='aa'>*/
           <div>
-            <form className="col s9 offset-s1">
+            <form className="col s12 ">
+
+
+
+
 
                 <div className="row">
                   <div className='input-field col s2'>
@@ -108,7 +117,8 @@ class Profile extends Component {
       )
 
         return(
-          <div className="col s9">
+          <div className="col s8">
+
             {profile}
 
           </div>

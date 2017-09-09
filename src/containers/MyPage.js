@@ -14,7 +14,7 @@ class MyPage extends Component {
           <div className='row '>
             <SideNav />
             <Profile />
-            <div className= 'col s1 offset-s7'>
+            <div className= 'col s1 offset-s6'>
               <NavLink to='/'><button className="btn right marginT waves-effect waves-light red lighten-3">수정</button></NavLink>
 
             </div>
