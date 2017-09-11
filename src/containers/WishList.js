@@ -11,18 +11,24 @@ class WishList extends Component {
         super(props);
     }
     render() {
+
+
+
+
         return(
-          <div className="container auth">
-          <div className="row">
+          <div className="container ">
 
+            <div className="row">
+              <h3>위시리스트qaaasdfasfd</h3>
 
+              <GuideCardItem/>
+              <GuideCardItem/>
 
-              <h3>위시리스트</h3>
+            </div>
 
-              <GuideCardItem />
-
-              </div>
           </div>
+
+
         );
     }
 }
