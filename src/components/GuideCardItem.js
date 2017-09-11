@@ -12,7 +12,7 @@ class GuideCardItem extends Component {
     render() {
 
       const CardItem = (
-        <div>
+
         <div className="col s3">
           <div className="card">
             <div className="card-image">
@@ -23,13 +23,13 @@ class GuideCardItem extends Component {
             <div className="card-action">
               <p>₩96,069 Bike and taste the best of Paris at your own pace.</p>
               <br></br>
-              <a href="#" className="blue-text">상세보기</a>
-              <a href="#" className="blue-text">찜하기</a>
+              <a href="#" className="blue-text left">상세보기</a>
+              <a href="#" className="blue-text ">찜하기</a>
               <p className="right black-text"> 평점 <span> 3.5</span> 점</p>
             </div>
           </div>
          </div>
-         </div>
+
       )
 
 
@@ -39,12 +39,8 @@ class GuideCardItem extends Component {
 
         return(
 
-          <div className="col s12">
+          <div>
 
-              {CardItem}
-              {CardItem}
-              {CardItem}
-              {CardItem}
               {CardItem}
               {CardItem}
               {CardItem}

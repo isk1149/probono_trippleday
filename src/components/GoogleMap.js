@@ -9,6 +9,16 @@ class GoogleMap extends Component {
         super(props);
     }
 
+    componentWillUnmount(){
+      const allScripts = document.getElementsByTagName( 'script' );
+[].filter.call(
+  allScripts,
+  ( scpt ) => scpt.src.indexOf( 'key=googleAPIKEY' ) >= 0
+ )[ 0 ].remove();
+
+ window.google = {};
+    }
+
     componentDidMount(){
        const script1 = document.createElement('script');
 
@@ -80,12 +90,12 @@ class GoogleMap extends Component {
           map.fitBounds(bounds);
         });
         };
-      `;
+      `
 
       const script = document.createElement('script');
       script.async = true;
       script.defer = true;
-      script.src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKHgj4JBJBo5tMAkUoeKvsNlBSTO-HIQ8&libraries=places&callback=initAutocomplete";
+      script.src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5PIOp7E83jz9-EtbthhehmGKL9AAWeNU&libraries=places&callback=initMap";
 
 
 

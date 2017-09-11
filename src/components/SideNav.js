@@ -14,9 +14,11 @@ class SideNav extends Component {
 
 
 
-            <div>
+            <div >
                 <NavLink to = "/MyPage" ><h3 className='center'>프로필</h3></NavLink>
+                
                 <NavLink to = "/MyTrip" ><h3 className='center'>나의 여행</h3></NavLink>
+
                 <NavLink to = "/Review" ><h3 className='center'>후기</h3></NavLink>
             </div>
 
@@ -24,11 +26,12 @@ class SideNav extends Component {
       )
 
         return(
-
-          <div className="col s3 ">
+          <div>
+          <div className="col s3">
             {SideBar}
 
             </div>
+          </div>
         );
     }
 }

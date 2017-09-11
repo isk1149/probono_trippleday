@@ -59,6 +59,7 @@ class Header extends Component {
 
             let islogined = true;
         return(
+
           <nav className="nav-extended ">
 
 
@@ -87,6 +88,7 @@ class Header extends Component {
 
 
           </nav>
+
         );
     }
 }
