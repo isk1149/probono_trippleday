@@ -5,7 +5,8 @@ module.exports = {
     entry: [
         './src/index.js',
         'webpack-dev-server/client?http://0.0.0.0:4000',
-        'webpack/hot/only-dev-server'
+        'webpack/hot/only-dev-server',
+        './src/style.css'
     ],
 
     output: {
@@ -21,25 +22,40 @@ module.exports = {
         contentBase: './public',
         proxy: {
             "**": "http://localhost:3000"
+        },
+        stats: {
+          // Config for minimal console.log mess.
+          assets: false,
+          colors: true,
+          version: false,
+          hash: false,
+          timings: false,
+          chunks: false,
+          chunkModules: false
         }
     },
 
+
     plugins: [
-        new webpack.optimize.OccurrenceOrderPlugin(),
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoEmitOnErrorsPlugin()
+        new webpack.HotModuleReplacementPlugin()
     ],
 
     module: {
         loaders: [
             {
                 test: /\.js$/,
-                loaders: ['react-hot-loader', 'babel-loader?' + JSON.stringify({
+                loaders: ['react-hot', 'babel?' + JSON.stringify({
                     cacheDirectory: true,
                     presets: ['es2015', 'react']
                 })],
                 exclude: /node_modules/,
+            },
+            {
+                test: /\.css$/,
+                loader: 'style!css-loader'
             }
         ]
     }
+
+
 };
